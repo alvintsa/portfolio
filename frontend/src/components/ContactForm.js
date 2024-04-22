@@ -6,9 +6,9 @@ const ContactForm = () => {
     //TODO:
     return (
         <form>
-            <label>
-                
-            </label>
+            <label> Name: </label>
+            <label> Email: </label>
+            <label> Leave a message!: </label>
 
         </form>
 
