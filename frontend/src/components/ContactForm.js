@@ -1,10 +1,11 @@
 import { React, useState} from "react";
 import axios from 'axios';
+import "./ContactForm.css";
+import "./Containers.css"
 
 const ContactForm = () => {
-    //TODO: CONTACT FORM (THIS WILL SHOW UP ON THE BOTTOM RIGHT OF EVERY PAGE!!) NOT TO BE CONFUSED WITH THE 
-    // TODO: CONTACT COMPONENT IN PAGES DIRECTORY
-    //TODO:
+    //TODO: NEWEST TODO IS TO FORMAT THE FORM, FRONTEND TO BACKEND CONNECTIONS IS DONE!!!
+    //TODO: ALSO FIX .THEN .CATCH FORMATTING BELOW!!
 
     const [inputs, setInputs] = useState({});
 
@@ -21,27 +22,30 @@ const ContactForm = () => {
         .then(response => {
             // Handle success
             console.log(response.data);
-        })
+})
         .catch(error => {
             // Handle error
             console.error('There was an error!', error);
         });
-        alert(inputs);
+        // alert(inputs);
     }
     return (
-        <form onSubmit = {handleSubmit}>
-            <label> Name: <input type="text" name="name" value={inputs.name || ""} onChange={handleChange} />
-            </label>
-            
-            <label> Email: <input type = "text" name = "email" value = {inputs.email || ""} onChange = {handleChange}/>
-            </label>
+        <div className = "form-container">
+            <form className = "contact-form" onSubmit = {handleSubmit}>
+                <h1>Contact Me!</h1>
+                <label> Name: <input type="text" name="name" value={inputs.name || ""} onChange={handleChange} />
+                </label>
+                
+                <label> Email: <input type = "text" name = "email" value = {inputs.email || ""} onChange = {handleChange}/>
+                </label>
 
-            <label> Leave a message!: <input type = "text" name = "message" value = {inputs.message || ""} onChange = {handleChange}/>
-            </label>
+                <label> Leave a message!: <input type = "text" name = "message" value = {inputs.message || ""} onChange = {handleChange}/>
+                </label>
 
-            <input type = "submit" />
+                <input type = "submit" />
 
-        </form>
+            </form>
+        </div>
 
 
     );

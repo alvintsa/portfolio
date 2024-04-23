@@ -1,0 +1,5 @@
+.form-container {
+    position: relative;
+    min-height: 100vh; /* Ensure the container covers the entire viewport height */
+    padding: 20px;
+}

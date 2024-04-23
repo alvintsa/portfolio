@@ -1,0 +1,31 @@
+/* ContactForm.css */
+.contact-form {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 215px;
+    width: 280px;
+    border: 1px solid #333; /* Add a border around the form */
+    padding: 7px; /* Add some padding inside the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    z-index: 1;
+
+}
+
+.contact-form label {
+    /* Add label styles */
+}
+
+.contact-form input {
+    /* Add input styles */
+}
+
+.contact-form textarea {
+    /* Add textarea styles */
+}
+
+.contact-form button {
+    /* Add button styles */
+}
