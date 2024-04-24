@@ -8,15 +8,15 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Projects from "./pages/Projects";
+import NavBar from "./components/NavBar";
 
 const App = () => {
     return (
         <BrowserRouter>
             <div>
                 <h1>My Portfolio</h1>
-                {/* Define your routes */}
                 <Routes>
-                    <Route path="/" element={<Layout />}>
+                    <Route path="/" element={<Layout />}> {/*Layout makes things consistent on each page!!*/}
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/blogs" element={<Blogs />} />

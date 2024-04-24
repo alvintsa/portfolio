@@ -1,10 +1,16 @@
 import { Outlet, Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
+import ContactForm from "../components/ContactForm";
 
 const Layout = () => {
   return (
     <>
       <nav>
         <ul>
+          <li>
+          <NavBar/>
+
+          </li>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -13,6 +19,9 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <ContactForm/>
           </li>
         </ul>
       </nav>
