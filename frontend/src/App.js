@@ -8,6 +8,8 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Projects from "./pages/Projects";
+import Research from "./pages/Research";
+import Personal from "./pages/Personal";
 import NavBar from "./components/NavBar";
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/blogs" element={<Blogs />} />
+                        <Route path = "/research" element = {<Research />} />
+                        <Route path = "/personal" element = {<Personal />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="*" element={<NoPage />} />
                     </Route>

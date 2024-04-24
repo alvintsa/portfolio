@@ -3,13 +3,14 @@ import { NavLink } from 'react-router-dom';
 import "./NavBar.css";
 
 
-//TODO: IMPLEMENT NAVBAR!!
+//TODO: format NAVBAR!!
 const NavBar = () => {
     return (
         <nav className="navbar">
             <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>
-            <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
-            <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
+            <NavLink to="/personal" className="nav-link" activeClassName="active">Personal Life</NavLink>
+            <NavLink to = "/projects" className = "nav-link" activeClassName = "active" >Projects</NavLink>
+            <NavLink to="/research" className="nav-link" activeClassName="active">Research</NavLink>
         </nav>
     );
     
