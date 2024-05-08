@@ -1,10 +1,9 @@
-import ContactForm from "../components/ContactForm";
-import NavBar from "../components/NavBar";
+import "../styles/Headers.css";
 
 const Home = () => {
     return (
       <div>
-      <h1>Home</h1>
+      <h1 className="page-header">Hoamae</h1>
 
       {/* <ContactForm/> */}
       </div>
