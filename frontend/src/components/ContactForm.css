@@ -1,6 +1,6 @@
 /* ContactForm.css */
 .contact-form {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     display: flex;
@@ -10,7 +10,7 @@
     border: 1px solid #333; /* Add a border around the form */
     padding: 7px; /* Add some padding inside the border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
-    z-index: 1;
+    z-index: 1000; /*ensures that compoent appears above anything on the page*/
 
 }
 

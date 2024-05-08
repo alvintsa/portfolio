@@ -1,10 +1,12 @@
 import ContactForm from "../components/ContactForm";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
     return (
       <div>
-      <ContactForm/>
       <h1>Home</h1>
+
+      {/* <ContactForm/> */}
       </div>
     );
   };

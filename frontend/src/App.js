@@ -13,6 +13,8 @@ import Personal from "./pages/Personal";
 import NavBar from "./components/NavBar";
 
 const App = () => {
+    //TODO: FIX HOW HEADERS DONT RENDER ON OTHER PAGES BSIDES HOME, AND THE CONTACT FORM OVERLAPS FOR HOME PAGE!!
+    //TODO: SOMETHING TO DO WITH OUTLET???
     return (
         <BrowserRouter>
             <div>
